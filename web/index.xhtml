@@ -34,26 +34,31 @@
             .text1{
                 font-size:25px;
             }
+            .error {color:red}
+                
+            }
               
             
             </style>
     </h:head>
     <h:body>
         <h:form class="formal">
+            <h:messages styleClass="error" />
             <div class="div1">
-                <h2>Enter FullName:<h:inputText value="#{student.fullName}"/></h2>
+                <h2>Enter FullName:<h:inputText value="#{admin.fullname}" label="fullname" /></h2>
             </div>  
+            <a href="Customer.xhtml"></a>
             <div class="div2">
-                <h2> Enter Password:<h:inputText value="#{student.password}"/> </h2>
+                <h2> Enter Password:<h:inputText value="#{admin.passport}" label="password" required="true" /> </h2>
                 
             </div>
             
             <div class="div3">
-                <h2> Enter Passport_no:<h:inputText value="#{student.passport_no}"/>  </h2> 
+                <h2> Enter Passport_no:<h:inputText value="#{admin.passport_no}" label="passport_no" required="true"/>  </h2> 
                 
             </div>
             <div class="div4">
-               <h:commandButton value="submit" action="Customer.xhtml" class="text1" />
+                <h:commandButton value="submit" action="#{admin.mubarek}" class="text1" />
                  
             </div>
             

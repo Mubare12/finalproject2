@@ -13,41 +13,22 @@
                 margin-left: 400px;
             }
             .div2{
-                margin-left: 20px;
+                font-size: 27px;
             }
-            .txt3{
-                font-size: 25px;
-                background-color:appworkspace;
-            }
+           
+           
         </style>
     </h:head>
     <h:body>
         <h:form class="div1"> 
         
-            <div>
-               <h2>Passenger No<h:inputText></h:inputText></h2>  
+            <div class="div2">
+               <h2>Passport No<h:inputText></h:inputText></h2>  
+               <h:commandButton value="delete" class="div2"> </h:commandButton>
             </div>
-        <br/>
-        <div clas="div2">
-          <h2>Cancellation No <h:inputText></h:inputText></h2>   
-        </div>
-        <br/>
-        <div>
-           <h2>Cancellation Date<h:inputText></h:inputText></h2>  
-        </div>
-        <br/>
-        <div>
-          <h2>Ticket ID <h:inputText></h:inputText></h2>    
-        </div>
-        <br/>
-        <div>
-        <h2>Flight Code <h:inputText></h:inputText></h2>
-        </div>
-        <br/>
+   
     
-        <h:commandButton id="Cancel" value="Cancel" action="Customer.xhtml" class="txt3"></h:commandButton>
-              <h:commandButton id="veiw" value="view" action="#{RegisterUserBean.UserList}" class="txt3"></h:commandButton>
-
+       
             </h:form>
     </h:body>
 </html>
