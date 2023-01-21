@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+             body{
+                background-image: url("image/a1.jpg");
+                background-size: 100%;
+            }
+            .div1{
+                position:fixed;
+                left: 400px;
+            }
+            .div2{
+                margin-top: 50px;
+            }
+            .div3{
+                margin-left: 50px;
+            }
+            .div4{
+                margin-left: 20px;
+            }
+            .div5{
+                margin-left: 85px;
+            }
+            .div6{
+                display: flex;
+                font-size: 30px;
+            }
+            .txt2{
+                font-size: 25px;
+                margin-left: 130px;
+            }
+           
+        </style>
+    </h:head>
+    <h:body>
+        <h:form class="div1"> 
+            <div class="div2">
+         <h1>Flight Code
+             <h:inputText value="#{customerManage.flightCode}"></h:inputText></h1>
+                </div>
+            <div>
+                <h1>Passport No <h:inputText value="#{customerManage.passportNo}"></h:inputText> </h1> 
+            </div>
+            <div class="div3">
+                <h1>Address <h:inputText value="#{customerManage.address}"></h:inputText> </h1> 
+            </div>
+                
+            <div class="div4">
+                <h1>Nationality<h:inputText value="#{customerManage.nationality}"></h:inputText>  </h1>
+            </div>
+            <div class="div5">
+                <h1>Name<h:inputText value="#{customerManage.name}"></h:inputText>   
+            </h1> 
+            </div>
+          
+            <div class="div6"><h3 class="txt1">Gender </h3>
+                <h:selectOneRadio value="#{customerManage.gender}">
+                <f:selectItem itemValue="Male" itemLabel="Male"/>
+                <f:selectItem itemValue="Female" itemLabel="Female"/>
+            </h:selectOneRadio> 
+            </div>
+           
+            <div>
+                <h1>PH NO <h:inputText value="#{customerManage.phno}"></h:inputText></h1> 
+            </div>
+            <div class="div7">
+                <h:commandButton id="submit" value="Save" class="txt2" action="#{customerManage.function()}"></h:commandButton>
+               
+            <a href="dataTable.xhtml" style="margin: 75px; font-size: 30px; background-color:aliceblue " >View</a>
+
+            </div>
+            
+            </h:form>
+    </h:body>
+    
+</html>
