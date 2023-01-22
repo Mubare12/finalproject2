@@ -22,12 +22,15 @@
     <h:body>
         <h:form class="div1"> 
         
-            <div class="div2">
-               <h2>Passport No<h:inputText></h:inputText></h2>  
-               <h:commandButton value="delete" class="div2"> </h:commandButton>
-            </div>
+     
    
-    
+                  <div>
+                      
+                      <h2>Passport_no <h:inputText  value="#{delete1.passport_no}" /></h2>
+                  </div>
+               <div style="display: flex;" class="btn">
+                       <h:commandButton value="DELETE" action="#{delete1.delete()}"/>
+                   </div>
        
             </h:form>
     </h:body>

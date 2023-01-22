@@ -31,4 +31,8 @@ public class DBConnection {
  
    DBConnection nd =new DBConnection ();
    nd.connMethod();   }
+
+    Connection get_connection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
