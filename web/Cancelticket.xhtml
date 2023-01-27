@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Cancel Ticket</title>
+        <style>
+            body{
+               background-image: url("image/tur5.jpg"); 
+               background-size: 100%;
+            }
+            .div2{
+                background-color:#52ff7f;
+               
+            }
+           
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Passport_no<h:inputText class="div1" value="#{deleteticket.passport_no}"></h:inputText> </h2> 
+            <br/> 
+         <h:commandButton class="div2" value="DELETE" action="#{deleteticket.delete12()}"/> 
+        </h:form>
+       
+    </h:body>
+</html>

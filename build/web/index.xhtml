@@ -3,64 +3,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Airline Reservation System</title>
-          <style>
+        <title> CS AIRLINE RESERVATION SYSTEM </title>
+        <style>
             body{
-                background-image: url("image/750.jpeg");
+                background-image: url("image/a6.jpg");
                 background-size: 100%;
-            }
-                }
-            .formal{
-              position:fixed;
-              
+                position: fixed;
+                margin-left: 250px;
             }
             .div1{
-                display:flex;
-                margin-left:400px;
+                margin-top: 40px;
+                font-size: 25px;
+                background-color: orange;
             }
             .div2{
-                display:flex;
-                margin-left:400px;
+                margin-left: 80px;
+                font-size: 25px;
+                background-color: orangered
             }
-             .div3{
-                display:flex;
-                margin-left:400px;
-            }
-             .div4{
-                display:flex;
-                margin-left:400px;
-               
-             }
-            .text1{
-                font-size:25px;
-            }
-            .error {color:red}
+            .div3{
+                font-style:oblique;
                 
             }
-              
-            
-            </style>
+        </style>
+        
     </h:head>
     <h:body>
-        <h:form class="formal">
-            <h:messages styleClass="error" />
-            <div class="div1">
-                <h2>Enter FullName:<h:inputText value="#{admin.fullname}" label="fullname" /></h2>
-            </div>  
-            <a href="Customer.xhtml"></a>
-            <div class="div2">
-                <h2> Enter Password:<h:inputText value="#{admin.passport}" label="password" required="true" /> </h2>
-                
-            </div>
+        <h:form>
+            <div class="div3"><h1>AIRLINE RESERVATION SYSTEM</h1>    
+            <br/>
+            <h2>WELCOME TO</h2>
+            <br/>
+            <h1>CS AIRWAYS</h1>
+            <br/></div>
+            <h1>select user type</h1>
+          
+            <h:commandButton value="Admin" action="Welpage.xhtml" class="div1"></h:commandButton>
             
-            <div class="div3">
-                <h2> Enter Passport_no:<h:inputText value="#{admin.passport_no}" label="passport_no" required="true"/>  </h2> 
-                
-            </div>
-            <div class="div4">
-                <h:commandButton value="submit" action="#{admin.mubarek}" class="text1" />
-                 
-            </div>
+            <h:commandButton value="USER" class="div2" action="Userpage.xhtml"></h:commandButton>
+           
             
         </h:form> 
     </h:body>

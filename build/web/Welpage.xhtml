@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+    <style>
+            body{
+                background-image: url("image/750.jpeg");
+                background-size: 100%;
+            }
+                }
+            .formal{
+              position:fixed;
+              
+            }
+            .div1{
+                display:flex;
+                margin-left:400px;
+            }
+            .div2{
+                display:flex;
+                margin-left:400px;
+            }
+             .div3{
+                display:flex;
+                margin-left:400px;
+            }
+           
+          
+            .error {color:red}
+                
+            }
+      
+            .div5{
+                margin-left:300px;
+                
+            }
+            .text1{
+                margin-left:600px;
+                font-size:25px;
+                margin-top:100px;
+                background-color: aqua;
+            }
+           
+           
+            
+            </style>
+    </h:head>
+    <h:body>
+        <h:form class="formal">
+             <h2 class="div5">Admin Login</h2> 
+           
+          
+            <div class="div1">
+                <h2>Enter FullName:<h:inputText value="#{admin.fullname}" label="fullname" /></h2>
+            </div>  
+            <a href="Customer.xhtml"></a>
+            <div class="div2">
+                <h2> Enter Password:<h:inputText value="#{admin.passport}" label="password" required="true" /> </h2>
+                
+            </div>
+            
+            <div class="div3">
+                <h2> Enter Passport_no:<h:inputText value="#{admin.passport_no}" label="passport_no" required="true"/>  </h2> 
+                
+            </div>
+          
+            <h:commandButton value="Login" action="#{admin.mubarek}" class="text1"/> 
+           
+              
+           
+            
+        </h:form> 
+    </h:body>
+            
+          
+    
+</html>

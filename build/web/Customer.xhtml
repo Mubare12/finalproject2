@@ -4,7 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Customer Information</title>
         <style>
              body{
                 background-image: url("image/a1.jpg");
@@ -33,6 +33,10 @@
             .txt2{
                 font-size: 25px;
                 margin-left: 130px;
+            }
+            .txt5{
+                font-size: 25px;
+                background-color:darksalmon;
             }
            
         </style>
@@ -69,10 +73,10 @@
                 <h1>PH NO <h:inputText value="#{customerManage.phno}"></h:inputText></h1> 
             </div>
             <div class="div7">
-                <h:commandButton value="Cancel" action="Cancel1.xhtml" > </h:commandButton>
-                <h:commandButton id="submit" value="Save" class="txt2" action="#{customerManage.function()}"></h:commandButton>
+                <h:commandButton value="Cancel" class="txt5" action="Cancel1.xhtml" > </h:commandButton>
+                <h:commandButton id="submit" value="Add" class="txt2" action="#{customerManage.function()}"></h:commandButton>
                
-            <a href="dataTable.xhtml" style="margin: 75px; font-size: 30px; background-color:aliceblue " >View</a>
+            <a href="dataTable.xhtml" style="margin: 75px; font-size: 30px; background-color:aquamarine; " >View</a>
 
             </div>
             

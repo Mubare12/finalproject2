@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Book Page</title>
+        <style>
+            body{
+                position: fixed;
+                margin-left: 200px;
+                background-image: url("image/turkish-arlines.png");
+                background-size: 100%;
+            }
+            .div1{
+                background-color:aquamarine;
+                
+            }
+            .div2{
+                background-color:chartreuse;
+                margin-left: 40px;
+            }
+            .div3{
+                background-color:orange;
+                margin-left: 20px;
+            }
+            .div4{
+                margin-left: 120px;
+            }
+            .div5{
+                margin-left: 80px;
+            }
+            .div6{
+                margin-left: 35px;
+            }
+            .div7{
+                font-size: 25px;
+            }
+            </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h3>Search Flight tickets </h3>
+            <h3>Fly Everywhere Fly Anywhere</h3>
+            
+               <h2>  Passport_no:<h:inputText value="#{bookManage.passport_no}"></h:inputText></h2> 
+            From1: <h:selectOneMenu class="div1" value="#{bookManage.from1}">
+                <f:selectItem itemValue="Ethiopia" itemLabel="Ethiopia"></f:selectItem> 
+                <f:selectItem itemValue="Palestine" itemLabel="Palestine"></f:selectItem> 
+                <f:selectItem itemValue="Turkiye" itemLabel="Turkiye"></f:selectItem> 
+                <f:selectItem itemValue="North Korea" itemLabel="North Korea"></f:selectItem> 
+                <f:selectItem itemValue="Uzbekistan" itemLabel="Uzbekistan"></f:selectItem>
+                <f:selectItem itemValue="Malaysia" itemLabel="Malaysia"></f:selectItem>
+                <f:selectItem itemValue="Hungary" itemLabel="Hungary"></f:selectItem>
+                <f:selectItem itemValue="Canada" itemLabel="Canada"></f:selectItem>
+            </h:selectOneMenu>
+            
+            To1:<h:selectOneMenu class="div2" value="#{bookManage.to1}">
+                <f:selectItem itemValue="Japan" itemLabel="Japan"></f:selectItem>
+                <f:selectItem itemValue="France" itemLabel="France"></f:selectItem>
+                <f:selectItem itemValue="UK" itemLabel="UK"></f:selectItem>
+                <f:selectItem itemValue="Romania" itemLabel="Romania"></f:selectItem>
+                <f:selectItem itemValue="Dubai" itemLabel="Dubai"></f:selectItem>
+                <f:selectItem itemValue="Morocoo" itemLabel="Morocoo"></f:selectItem>
+                <f:selectItem itemValue="Tunisia" itemLabel="Tunisia"></f:selectItem>
+            </h:selectOneMenu>
+            Class_Travel:<h:selectOneMenu class="div3" value="#{bookManage.classs_travel}">
+                <f:selectItem itemValue="First Clas" itemLabel="First Class"></f:selectItem>
+                <f:selectItem itemValue="Business Class" itemLabel="Business Class"></f:selectItem>
+                <f:selectItem itemValue="Economy Class" itemLabel="Economy Class"></f:selectItem>
+            </h:selectOneMenu><br/>
+            <div> <h2> Passenger_Name:<h:inputText value="#{bookManage.passenger_name}"></h:inputText></h2> </div> 
+            <div class="div4"><h2>Age:<h:inputText value="#{bookManage.age}"></h:inputText></h2> </div> 
+            <div><h2 class="div5">  Address:<h:inputText value="#{bookManage.address}"></h:inputText></h2> </div>  
+            <div class="div6">
+             
+                <h:commandButton value="Add"  class="div7" action="#{bookManage.function3()}"></h:commandButton>
+            </div> 
+        </h:form>  
+    </h:body>
+</html>

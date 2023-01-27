@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Update Ticket</title>
+        <style>
+            body{
+                background-image: url("image/pl2.webp");
+            }
+            .div1{
+                background-color:orange;
+                font-size: 25px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2> Passport_no<h:inputText value="#{updateBean.passport_no}"></h:inputText>  </h2>   
+            <h2> Passenger_name<h:inputText value="#{updateBean.passenger_name}"></h:inputText></h2>
+            <h2> Age<h:inputText value="#{updateBean.age}"></h:inputText></h2> 
+            <h2>Address<h:inputText value="#{updateBean.address}" ></h:inputText> </h2> 
+            <h:commandButton value="Update" class="div1" action="#{updateBean.update13()}"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
